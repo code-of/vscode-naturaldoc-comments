@@ -1,0 +1,54 @@
+{
+    "name": "natural-doc-comments",
+    "displayName": "Natural-Doc Comments",
+    "description": "",
+    "version": "1.2.2",
+    "icon": "static/icon.png",
+    "author": "Marcel Bobolz <ergotamin@e-p-s.org> (https://www.e-p-s.org)",
+    "publisher": "ergotamin",
+    "engines": {
+        "vscode": "^1.20.0"
+    },
+    "keywords": [
+        "comments",
+        "natural-docs",
+        "documentation"
+    ],
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.naturalDocComment"
+    ],
+    "main": "./out/extension",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.naturalDocComment",
+                "title": "New 'Natural-Docs'-Comment"
+            }
+        ],
+        "menus": {
+            "editor/context": [
+                {
+                    "when": "resourceLangId == c",
+                    "command": "extension.naturalDocComment",
+                    "group": "1_modification"
+                }
+            ]
+        }
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://e-p-s.org/C-Language.git"
+    },
+    "scripts": {
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "NODE_PATH=lib node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "@types/node": "^6.0.40",
+        "vscode": "^1.20.0"
+    },
+    "license": "GPLv3"
+}

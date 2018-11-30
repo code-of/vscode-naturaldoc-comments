@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Language="en-US" Id="natural-doc-comments" Version="1.0.0" Publisher="ergotamin"/>
+    <DisplayName>natural-doc comments</DisplayName>
+    <Description xml:space="preserve">Insert 'Natural-Doc' comments in C-Sources</Description>
+    <Tags>extension,vscode,comments,documentation,formatter,natural-docs</Tags>
+    <Categories>Other</Categories>
+    <GalleryFlags>Public</GalleryFlags>
+    <Badges></Badges>
+    <Properties>
+      <Property Id="Microsoft.VisualStudio.Code.Engine" Value="^1.20.0" />
+      <Property Id="Microsoft.VisualStudio.Code.ExtensionDependencies" Value="" />
+
+          <Property Id="Microsoft.VisualStudio.Services.Links.Source" Value="https://e-p-s.org/C-Language.git/tree/master/scripts/javascript/natural-doc-comments/" />
+          <Property Id="Microsoft.VisualStudio.Services.Links.Getstarted" Value="https://e-p-s.org/C-Language.git/tree/master/scripts/javascript/natural-doc-comments/" />
+          <Property Id="Microsoft.VisualStudio.Services.Links.GitHub" Value="https://e-p-s.org/C-Language.git/tree/master/scripts/javascript/natural-doc-comments/" />
+
+          <Property Id="Microsoft.VisualStudio.Services.Branding.Color" Value="#110033" />
+          <Property Id="Microsoft.VisualStudio.Services.Branding.Theme" Value="dark" />
+          <Property Id="Microsoft.VisualStudio.Services.GitHubFlavoredMarkdown" Value="true" />
+
+    </Properties>
+    <License>extension/LICENSE.md</License>
+    <Icon>extension/static/icon.png</Icon>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Code"/>
+  </Installation>
+  <Dependencies/>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.Code.Manifest" Path="extension/package.json" Addressable="true" />
+    <Asset Type="Microsoft.VisualStudio.Services.Content.Details" Path="extension/README.md" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Services.Content.Changelog" Path="extension/CHANGELOG.md" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Services.Content.License" Path="extension/LICENSE.md" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Services.Icons.Default" Path="extension/static/icon.png" Addressable="true" />
+  </Assets>
+</PackageManifest>
